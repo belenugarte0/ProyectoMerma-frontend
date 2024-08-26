@@ -1,0 +1,135 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@400;500;600;700;800&display=swap');
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+    body {
+        @apply font-['Nunito'];
+        @apply bg-gray-50; /* Fondo gris claro para todo el sitio */
+    }
+}
+
+@layer utilities {
+    /* Layout para la página de autenticación */
+    .auth__layout {
+        background-image: url('./assets/images/bg-auth.jpg');
+        background-color: rgba(255, 255, 255, 0.8); /* Fondo blanco con opacidad para un efecto más claro */
+        background-blend-mode: color;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        min-height: 100vh;
+        display: flex;
+        width: 100%;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 1rem; /* Añadido padding para asegurar espaciado en móviles */
+    }
+
+    /* Estilo del formulario de inicio de sesión */
+    .login__form {
+        @apply container bg-white py-8 px-6 max-w-md w-full rounded-lg shadow-lg; /* Fondo blanco y sombra sutil */
+        @apply border border-gray-200; /* Borde gris claro para más definición */
+    }
+
+    /* Estilo del dashboard */
+    .dashboard {
+        @apply flex h-screen relative;
+    }
+
+    /* Estilo del menú lateral */
+    .sidemenu {
+        @apply absolute h-screen flex flex-col -left-full md:relative md:left-0 bg-white max-w-xs w-full py-10 px-8; /* Fondo blanco para el menú */
+        @apply rounded-r-xl shadow-lg; /* Redondeo más pronunciado y sombra */
+        @apply transition-transform duration-300; /* Transición para el efecto de deslizamiento */
+        transform: translateX(0); /* Asegúrate de que esté visible */
+    }
+
+    .sidemenu:hover {
+        transform: translateX(-5px); /* Efecto de desplazamiento 3D */
+    }
+
+    .sidemenu__logo {
+        @apply font-extrabold text-xl mb-6 flex items-center text-blue-600; /* Texto azul y negrita */
+    }
+
+    .sidemenu__link {
+        @apply flex gap-4 items-center p-3 rounded-lg font-semibold transition-colors duration-300; /* Transición de colores suave */
+        @apply text-blue-600; /* Texto azul */
+    }
+
+    .sidemenu__link span {
+        @apply text-blue-600 text-xl;
+    }
+
+    .sidemenu__link:hover {
+        @apply bg-gradient-to-r from-blue-400 to-blue-700; /* Degradado azul claro a oscuro al pasar el ratón */
+        @apply text-white; /* Texto blanco en el estado hover */
+    }
+
+    .sidemenu__link:hover span {
+        @apply text-white; /* Íconos blancos en el estado hover */
+    }
+
+    .sidemenu__link--active {
+        @apply bg-gradient-to-r from-blue-500 to-blue-800; /* Degradado azul claro a oscuro para el estado activo */
+        @apply text-white; /* Texto blanco en el estado activo */
+    }
+
+    .sidemenu__link--active span {
+        @apply text-white; /* Íconos blancos en el estado activo */
+    }
+
+    .sidemenu__avatar {
+        @apply shadow-lg bg-white px-4 py-6 rounded-2xl text-center border border-gray-200; /* Fondo blanco y borde gris claro */
+    }
+
+    /* Estilo del encabezado */
+    .header {
+        @apply container flex flex-col gap-4 md:flex-row justify-between md:items-center;
+    }
+
+    /* Estilo de la lista de productos */
+    .product__list {
+        @apply grid gap-4 grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5;
+    }
+
+    /* Estilo de la tarjeta de producto */
+    .product__card {
+        @apply bg-white max-w-[250px] p-4 rounded-md shadow-md; /* Fondo blanco y sombra sutil */
+    }
+
+    /* Estilo de los ítems del carrito */
+    .cart__item {
+        @apply flex bg-white px-3 py-4 gap-4 items-center rounded-lg shadow-md; /* Fondo blanco y sombra sutil */
+    }
+
+    /* Estilo del checkout */
+    .checkout {
+        @apply container pt-8 grid grid-cols-5 gap-8;
+    }
+
+    .checkout__form {
+        @apply bg-white p-6 rounded-lg space-y-4 shadow-md; /* Fondo blanco y sombra sutil */
+    }
+
+    /* Estilos adicionales para textos */
+    .text-blue {
+        @apply text-blue-600; /* Texto azul */
+    }
+}
+
+@layer components {
+    /* Estilo de los contenedores */
+    .container {
+        @apply max-w-[90%] mx-auto;
+    }
+
+    /* Estilo de los botones primarios */
+    .btn-primary {
+        @apply bg-blue-600 text-white; /* Fondo azul claro y texto blanco */
+        @apply hover:bg-blue-700; /* Fondo azul más oscuro al pasar el ratón */
+    }
+}

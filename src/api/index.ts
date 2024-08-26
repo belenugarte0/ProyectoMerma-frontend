@@ -1,0 +1,1 @@
+export { inventoryDb } from "./inventoryDb";
