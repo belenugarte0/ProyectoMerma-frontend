@@ -2,7 +2,7 @@ import { Button } from "@nextui-org/react";
 import { useAuthStore } from "../../stores";
 import { Link, useLocation } from "react-router-dom";
 
-import Logo from '../../assets/logo.svg'
+import Logo from '../../assets/logo.png'
 import { sideMenuOptions } from "../../lib";
 
 

@@ -1,4 +1,4 @@
-import Logo from '../../assets/logo.svg'
+import Logo from '../../assets/logo.png'
 
 import { Toaster } from 'sonner'
 import { Navigate, Outlet } from "react-router-dom"
