@@ -5,4 +5,5 @@ export { useProductStore } from "./products/product.store";
 export { useAuthStore } from "./auth/auth.store";
 export { useCategoryStore } from "./categories/categories.store";
 export { useUserStore } from "./users/users.store";
+export { useRolStore } from "./roles/roles.store";
 

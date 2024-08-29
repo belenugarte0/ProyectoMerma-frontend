@@ -15,4 +15,7 @@ export { CategoriesPage } from "./categories/CategoriesPage";
 export { NewUserPage } from "./users/NewUserPage";
 export { UsersPage } from "./users/UsersPage";
 
+export { NewRolPage } from "./roles/NewRolPage";
+export { RolesPage } from "./roles/RolesPage";
+
 export { LoginPage } from "./auth/LoginPage";

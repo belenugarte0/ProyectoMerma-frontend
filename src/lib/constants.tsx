@@ -21,6 +21,12 @@ export const sideMenuOptions = [
     },
 
     {
+        path: 'Roles',
+        name: "Roles",
+        icon: <LuLayers/>
+    },
+
+    {
         path: 'cart',
         name: "Carrito",
         icon: <LuShoppingCart/>

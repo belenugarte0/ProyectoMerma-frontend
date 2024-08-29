@@ -12,3 +12,7 @@ export type { ISimpleUser } from './users/simple-user';
 export type { IUsersResponse } from './users/users-response';
 export type { ILoginResponse } from './auth/login-response';
 export type { IUser } from './auth/user';
+/**/
+export type { IUpdateRolResponse } from './roles/update-rol-response';
+export type { ISimpleRol} from './roles/simple-rol';
+export type { IRolesResponse } from './roles/roles-response';

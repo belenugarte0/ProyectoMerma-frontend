@@ -3,7 +3,7 @@ import { createBrowserRouter } from "react-router-dom";
 
 import App from "../App";
 import { AuthLayout, RootLayout } from "../layouts";
-import { CartPage, CategoriesPage, CheckoutPage, LoginPage, NewCategoryPage, NewProductPage, NewUserPage, ProductPage, ProductsPage, SalesPage, UsersPage } from "../pages";
+import { CartPage, CategoriesPage, CheckoutPage, LoginPage, NewCategoryPage, NewProductPage, NewRolPage, NewUserPage, ProductPage, ProductsPage, RolesPage, SalesPage, UsersPage } from "../pages";
 import { ErrorView } from "../components";
 
 
@@ -25,6 +25,14 @@ export const router = createBrowserRouter([
                     {
                         path: 'categories/new',
                         element: <NewCategoryPage/>
+                    },
+                    {
+                        path: 'roles',
+                        element: <RolesPage/>
+                    },
+                    {
+                        path: 'roles/new',
+                        element: <NewRolPage/>
                     },
                     {
                         path: 'products',
